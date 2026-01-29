@@ -6,6 +6,53 @@
     <title>PostNL</title>
 </head>
 <body>
-    
+    <header>
+
+    </header>
+    <main>
+        <section id="hero-section"> 
+            <h1>Grenzeloos groeien met je webwinkel</h1>
+            <p>Verstuur het voordelig als brievenbuspakje</p>
+            <a href="#" id="hero-button" class="hero-link">Lees meer></a>
+            <a href="#" class="hero-link">Link ></a>
+        </section>
+
+
+
+        <section class="pakket-nav">
+         <!-- H2 in deze sectie? -->
+         <nav>
+            <ul>
+                <li><a href="#" class="active">Pakket volgen</a></li>
+                <li><a href="#">Versturen</a></li>
+                <li><a href="#">Locaties</a></li>
+                <li><a href="#">Postcodes</a></li>
+            </ul>
+        </nav>
+
+        <div class="tabcontent">
+            <form> 
+                    <label for="barcode">Barcode</label>
+                    <input type="text" id="barcode" required/>
+
+                    <label for="ontvanger">Land van de Ontvanger</label>
+                    <select id="ontvanger" required>
+                        <option value="" disabled selected>Selecteer een land</option>
+                        <option value="Nederland">Nederland</option>
+                        <option value="België">België</option>
+                        <option value="Duitsland">Duitsland</option>
+                    </select>
+                        <!-- eventueel verplichte postcode 1234ab -->
+                    <label for="postcode">Postcode</label>
+                    <input type="text" id="postcode" required/>
+
+                    <button type="submit">Zoeken</button>
+                </form>
+        </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
