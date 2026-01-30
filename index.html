@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,36 +20,109 @@
 
 
         <section class="pakket-nav">
-         <!-- H2 in deze sectie? -->
-         <nav>
-            <ul>
-                <li><a href="#" class="active">Pakket volgen</a></li>
-                <li><a href="#">Versturen</a></li>
-                <li><a href="#">Locaties</a></li>
-                <li><a href="#">Postcodes</a></li>
-            </ul>
-        </nav>
+            <h2>Volg je pakket</h2>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Pakket volgen</a></li>
+                    <li><a href="#">Versturen</a></li>
+                    <li><a href="#">Locaties</a></li>
+                    <li><a href="#">Postcodes</a></li>
+                </ul>
+            </nav>
 
-        <div class="tabcontent">
-            <form> 
-                    <label for="barcode">Barcode</label>
-                    <input type="text" id="barcode" required/>
+            <div class="tabcontent">
+                <form> 
+                        <label for="barcode">Barcode</label>
+                        <input type="text" id="barcode" required>
 
-                    <label for="ontvanger">Land van de Ontvanger</label>
-                    <select id="ontvanger" required>
-                        <option value="" disabled selected>Selecteer een land</option>
-                        <option value="Nederland">Nederland</option>
-                        <option value="België">België</option>
-                        <option value="Duitsland">Duitsland</option>
-                    </select>
-                        <!-- eventueel verplichte postcode 1234ab -->
-                    <label for="postcode">Postcode</label>
-                    <input type="text" id="postcode" required/>
+                        <label for="ontvanger">Land van de Ontvanger</label>
+                        <select id="ontvanger" required>
+                            <option value="" disabled selected>Selecteer een land</option>
+                            <option value="Nederland">Nederland</option>
+                            <option value="België">België</option>
+                            <option value="Duitsland">Duitsland</option>
+                        </select>
+                            <!-- eventueel verplichte postcode 1234ab -->
+                        <label for="postcode">Postcode</label>
+                        <input type="text" id="postcode" required/>
 
-                    <button type="submit">Zoeken</button>
-                </form>
-        </div>
+                        <button type="submit">Zoeken</button>
+                    </form>
+            </div>
         </section>
+
+        <form class="search-form" role="search">
+         <label class="form-label" for="main-search-input">Ik ben op zoek naar...</label>
+    
+            <div class="input-wrapper">
+               <input id="main-search-input" class="search" type="text" placeholder="Wat zoek je?">
+            </div>
+
+            <button class="form-button" type="submit">🔍</button>
+        </form>
+
+        <article id="voorkeuren-bezorging" class="info-cards">
+            <img src="" alt="">
+            <h2>Voorkeuren bezorging</h2>
+            <p>Vaak op pad? Bepaal zelf waar we je pakketten bezorgen:</p>
+            <div class="section-footer-link"><a href="Link">Link</a></div>
+        </article>
+
+        <article id="track-and-race" class="info-cards">
+            <img src="" alt="">
+            <h2>Track & Trace wereldwijd</h2>
+            <p>Track & Trace ook op de kleinste pakjes naar het buitenland, naar wel 75 landen.</p>
+            <div class="section-footer-link"><a href="Link">Link</a></div>
+        </article>
+
+        <article id="postzegel" class="info-cards">
+            <img src="" alt="">
+            <h2>Nu 1 postzegel nodig?</h2>
+            <p>Verstuur je brief of kaart met een postzegelcode!</p>
+            <div class="section-footer-link"><a href="Link">Link</a></div>
+        </article>
+
+        <article id="fotokaart">
+            <img src="" alt="">
+            <h2>Met de PostNL-app heb je alles in de hand</h2>
+            <p>Regel al je PostNL-zaken zoals jij dat wil. Maak en vestuur een fotokaart, koop een postzegelcode of bekijk welke post en pakketten er naar je onderweg zijn. Miljoenen tevreden gebruikers gingen je voor. Ben jij de volgende? Download 'm nu!</p>
+            <a href="#">Fotokaart versturen</a>
+        </article>
+
+        <article id="voordelen">
+            <img src="" alt="">
+            <h2>Voordelen van een persoonlijk account</h2>
+            <ul>
+                <li>Volg gemakkelijk je zendingen</li>
+                <li>Kies zelf je bezorgtijd of -plaats</li>
+                <li>Makkelijk iets versturen</li>
+            </ul>
+            <a href="#">Maak een account aan</a>
+        </article>
+
+        <article id="veel-post" class="mini-cards">
+            <img src="" alt="">
+            <h2>Veel post versturen</h2>  
+            <p>Gemakkelijk en voordelig grote hoeveelheden post tegelijk versturen</p>
+            <div class="section-footer-link"><a href="#">Lees over partijenpost ></a></div>
+        </article>
+
+        <article id="logistieke-oplossing" class="mini-cards">
+            <img src="" alt="">
+            <h2>Altijd de juiste logistieke oplossingen</h2>  
+            <p>Als je op zoekbent naar groot of gekoeld transport. Od installatie en montage van artikelen</p>
+            <div class="section-footer-link"><a href="#">Bekijk de mogelijkheden </a></div>
+        </article>
+
+        <article id="versturen">
+            <img src="" alt="">
+            <h2>Versturen naar het buitenland</h2> 
+            <p>Gemakkelijk post naar het buitenland versturen</p>
+            <a href="" class="btn-outline">Lees over partijenpost ></a>
+            <a href="" class="btn-link">Alles over versturen ></a>
+        </article>
+
+
     </main>
     <footer>
 
