@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+    /* ------------Kleuren-------------- */
+  /* Backgrounds */
+  --bg-white: #ffffff;
+  --bg-gray: #e3e3e3;
+  --bg-accent-gray: #F1F1F2 ;
+  --button-blue:#2E2EFF;
+
+  /* Text colors */
+  --text-dark-blue: #001a73;
+  --text-black: #121212;
+  --text-light-blue: #4e4ee2;
+  --text-orange: #B54003;
+
+  /* Card – Red */
+  --card-red-main: #d83d00;
+  --card-red-secondary: #8e0d27;
+
+  /* Card – Blue */
+  --card-blue-main: #6161ff;
+  --card-blue-secondary: #3737c5;
+
+  /* Card – Navy */
+  --card-navy-main: #011c75;
+  --card-navy-secondary: #001252;
+
+/* ------------typography-------------- */
+  /* Fonts */
+  --font-heading: "ABC ROM", sans-serif;
+  --font-body: "Hanken Grotesk", sans-serif;
+
+  /* Font weights */
+  --weight-regular: 400;
+  --weight-bold: 700;
+
+  /* Heading sizes ABC ROM */
+  --h1-xl: 32px;
+  --h2-l: 25px;
+  --h2-m: 21px;
+  --h3-s: 18px;
+
+  /* Body sizes Hanken Grotesk */
+  --text-l: 24px;
+  --text-m: 16px;
+  --text-sm: 14px;
+}
+
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--text-m);
+  font-weight: var(--weight-regular);
+
+  h1, h2, h3 {
+  font-family: var(--font-heading);
+  font-weight: var(--weight-bold);
+}
+
+h1 {
+  font-size: var(--h1-xl); /* 32px */
+}
+
+h2.l {
+  font-size: var(--h2-l); /* 25px */
+}
+
+h2.m {
+  font-size: var(--h2-m); /* 21px */
+}
+
+.h3 {
+  font-size: var(--h3-s); /* 18px */
+  font-family: var(--font-heading);
+}
+
+.tab-heading{
+  font-size: var(--h3-s);
+  font-weight: var(--weight-bold);
+  color: var(--text-orange);
+}
+
+.text-l {
+  font-size: var(--text-l);
+  font-weight: var(--weight-bold);
+}
+
+.text-m {
+  font-size: var(--text-m);
+  font-weight: var(--weight-bold);
+}
+
+.text-sm {
+  font-size: var(--text-m);
+  font-weight: var(--weight-regular);
+}
+
+.text-s {
+  font-size: var(--text-sm);
+  font-weight: var(--weight-regular);
+}
+
+.button {
+  display: inline-flex;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: var(--weight-bold);
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  background: var(--card-blue-main);
+  color: white;
+
+  &.button-blue-large {
+    width: 100%;
+  }
+
+  &.button-transparent-large {
+    background: transparent;
+    width: 100%;
+    color: var(--button-blue);
+    border: 2px solid var(--button-blue);
+  }
+  
+}
+
+
+
+
+}

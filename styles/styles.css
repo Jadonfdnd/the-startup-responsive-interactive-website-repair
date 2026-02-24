@@ -1,5 +1,332 @@
+body{
+    min-width: 360;
+}
 main {
+
     display: grid;
     grid-template-columns: 1fr;
+    /* justify-content:center; */
+
+    
+}
+
+
+
+#hero-section {
+    grid-column: 1;
+
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+
+    h2 {
+        justify-self: center;
+        max-width: 14ch;
+        font-weight:var(--h1-xl);
+        font-size: var(--h1-xl);
+        font-family: var(--font-heading);
+    }
+
+    p {
+        max-width: 26ch;
+    }
+
+    .hero-link {
+        padding: 1rem;
+        text-decoration: none;
+    }
+}
+
+.pakket-nav ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: var(--bg-gray);
+    padding: 0; /* Let individual LI items handle padding */
+    margin: 0;
+}
+
+.pakket-nav h2{
+    margin: 1rem;
+}
+
+.pakket-nav li a {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    padding: 1rem 0.5rem;
+    font-size: var(--text-sm);
+    text-align: center;
+    color: var(--text-dark-blue);
+    text-decoration: none;
+}
+.pakket-nav li {
+    list-style: none;
+}
+
+.pakket-nav li a.active {
+    background-color: white;
+    color: var(--text-orange);
+    border-top: 4px solid var(--text-orange); /* The highlight line */
+}
+
+.pakket-nav .tabcontent {
+    background-color: white;
+    padding: 2rem 1rem;
+
+    
+    
+}
+.tabcontent {
+    font-size: var(--text-m);
+    font-weight: var(--weight-bold);
+    color: var(--text-black);
+    margin-bottom: 0.5rem;
+    form {
+        display: flex;
+        flex-direction: column;
+        padding:1rem;
+
+    }
+
+
+
+}
+    /* binnen de form styling select */
+
+.tabcontent input,
+.tabcontent select {
+    padding: 0.75rem;
+    margin-bottom: 1.5rem; 
+    border: 1px solid var(--bg-gray);
+    border-radius: 4px;
+    font-family: var(--font-body);
+    font-size: var(--text-m);
+}
+/* focus voor accesibility  mooie blauwe outline*/
+.tabcontent input:focus, 
+.tabcontent select:focus {
+    outline: 2px solid var(--card-blue-main);
+    border-color: transparent;
+}
+
+/* serch from--------------------------------------------------------------------- */
+.search-form {
+    display: flex;
+    flex-wrap: wrap; /* Allows label to sit on top if it's too long */
+    width: 90%;
+    margin: 2rem auto;
+    gap: 0; 
+}
+.search-form input:focus,
+.search-form select:focus {
+    outline: 2px solid var(--card-blue-main);
+    border-color: transparent      
+}
+
+.form-label {
+    width: 100%; /* Forces label to its own line above the input */
+    margin-bottom: 0.5rem;
+    font-weight: var(--weight-bold);
+    color: var(--text-black);
+}
+
+.search {
+    flex-grow: 1; /* Input takes up the rest of the space */
+    padding: 0.75rem;
+    border: 1px solid var(--bg-gray);
+    border-right: none; /* Joins the input and button */
+    border-radius: 4px 0 0 4px; /* Rounds only the left corners */
+    font-family: var(--font-body);
+}
+
+.search-form .button {
+    border-radius: 0 4px 4px 0; /* Rounds only the right corners */
+    padding: 0.75rem 1rem;
+    background-color: var(--card-blue-main);
+}
+/* all 3 info cards */
+.info-cards {
+    display: flex;
+    flex-direction: column;
+    
+    
+    width: 90%;
+    border-radius: 8px;
+    margin: 1em auto;
+    min-height: 400px;
+    max-width: 300px;
+    
+
+
+    h3 {
+        font: var(--font-heading);
+        font-weight:var(--weight-bold);
+        size: 21px;
+        color: white;
+        margin-top: auto;
+        margin-bottom: 0.5rem;
+        margin-left: 1rem;
+    }
+
+    p {
+        color: white;
+        margin:1rem;
+    }
+
+   
+    
+    img {
+        height: 150px;
+        width: auto;
+        margin: 2rem;
+        object-fit: contain;
+        align-self:baseline;
+    }
+
+
+    
+}
+    .section-footer-link {
+        margin-top: auto;
+        padding: 1rem 1.5rem;
+        color: white;
+        text-decoration: none;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px; 
+
+        background-color: rgba(0, 0, 0, 0.2); /* Maakt de footer subtiel donkerder dan de kaart */
+        padding: 1rem 1.5rem;
+        
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+
+    .card-body {
+      margin-top: auto; 
+      padding-left: 2rem;
+      padding: 1.5rem; 
+
+    }
+/* kleuren per info card */
+#voorkeuren-bezorging { background-color: var(--card-red-main);  }
+#track-and-trace { background-color: var(--card-blue-main); img { height: 6rem;} }
+#postzegel { background-color: var(--card-navy-main); }
+/* first info-card */
+
+
+#voorkeuren-bezorging {
+    background-color: var(--card-red-main);
+
+    .section-footer-link {
+        background-color: var(--card-red-secondary);
+    }
+
+
+}
+/* fotokaart */
+#fotokaart {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-accent-gray);
+    width: 100%;
+    margin-bottom: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    a {
+        width: 80%;
+        justify-self:flex-start;
+    }
+    
+}
+
+#fotokaart img {
+    width: 100%;
+    height: auto; 
+    object-fit: cover;
+    }
+
+#fotokaart h3, 
+#fotokaart p {
+    padding: 1rem 1.5rem; /* Give the text some breathing room */
+}
+
+/* Voordelen van een persoonlijk account */
+#voordelen {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    justify-self: center;
+    padding-top: 1rem;
+
+    img {
+    width: 100%;
+    height: auto; 
+    object-fit: cover;
+    }
+
+}
+
+.mini-cards {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    width: 90%;
+    margin: 1rem auto;
+    
+
+
+    background-color: var(--bg-accent-gray);
+    border-radius: 8px;
+    overflow: hidden; /* keep footer corners rounded */
+
+    img {
+        height: 130px;
+        width: auto;
+        margin: 1em;
+        align-self: flex-start;
+    }
+
+    a {
+        color: var(--text-light-blue);
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+
+
+}
+
+.mini-cards h3, 
+.mini-cards p {
+    padding: 0 1.5rem; /* Apply padding to text instead of the whole card */
+    margin-bottom: 1rem;
+}
+.mini-cards-footer {
+    margin-top: auto;
+    background-color: var(--bg-gray); 
+    padding: 1rem 1.5rem;
+    width: 100%;
+    border-bottom-left-radius: 8px;
+    
+}
+
+#versturen {
+    display:flex;
+    flex-direction: column;
+    padding: 1rem;
+
+    img{
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .btn-link {
+     margin: 1em;
+     text-decoration:none ;
+    }
 }
