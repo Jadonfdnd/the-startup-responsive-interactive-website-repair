@@ -78,3 +78,31 @@ button:hover, .button:hover {
     background-color: blue;
     transition: 1s;
 }
+
+/* idle animaties voor de info-cards en mini-cards */
+@media (min-width: 880px){
+    #voorkeuren-bezorging, #postzegel, #veel-post{
+        animation: easy-hover 4s ease-in-out infinite;
+    }
+
+    #track-and-trace, #logistieke-oplossing {
+        animation: easy-hover-negative 4s ease-in-out infinite;
+    }
+    
+}
+    
+
+@keyframes easy-hover {
+    0% {transform: translateY(1rem);}
+    50% {transform: translateY(-1rem);}
+    100% {transform: translateY(1rem);}
+}
+
+@keyframes easy-hover-negative {
+    0% {transform: translateY(-1rem);}
+    50% {transform: translateY(1rem);}
+    100% {transform: translateY(-1rem);}
+}
+
+
+/* click and scale  */
