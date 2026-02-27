@@ -115,6 +115,7 @@ h2.m {
   cursor: pointer;
   background: var(--card-blue-main);
   color: white;
+  max-width: 300px;
 
   &.button-blue-large {
     width: 100%;
