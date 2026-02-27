@@ -6,6 +6,8 @@
     <title>PostNL</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/stylesheet.css">
+    <link rel="stylesheet" href="styles/test.css">
+    <script src="index.js" defer></script>
 </head>
 <body>
     <header>
@@ -39,7 +41,7 @@
             <h2>Volg je pakket</h2>
 
                 <div class="tabcontent">
-                    <form> 
+                    <form id="track-form"> 
                         <div class="input-form">
                             <label for="barcode">Barcode</label>
                             <input type="text" id="barcode" required>
@@ -58,7 +60,7 @@
                             <label for="postcode">Postcode</label>
                             <input type="text" id="postcode" required/>
                         </div>    
-                            <button class="button"  type="submit">Zoeken</button>
+                            <button class="button" id="search-btn" type="submit">Zoeken</button>
                     </form> 
 
                 </div>
