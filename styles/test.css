@@ -208,4 +208,16 @@ button:hover, .button:hover {
 
 
 
+    /* geen animaties */
+@media (prefers-reduced-motion: reduce) {
+    .click-and-scale {
+       
+        animation: none !important;
+
+    }
     
+
+    .mini-cards.click-and-scale img {
+        animation: none !important;
+    }
+}

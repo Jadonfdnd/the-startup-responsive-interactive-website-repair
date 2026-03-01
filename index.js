@@ -38,3 +38,5 @@ allMiniCards.forEach(card => {
         });
     }
 });
+
+
