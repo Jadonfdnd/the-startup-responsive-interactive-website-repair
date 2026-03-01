@@ -120,3 +120,79 @@ button:hover, .button:hover {
 a[href="#flow"].flowCss {
   transform: rotate(180deg);
 }
+
+
+/* ---------------------carousel---------------------- */
+
+
+.info-cards-container {
+    display: flex;
+    gap: 1rem; 
+    width: 100%;
+    margin: 3em auto;
+    overflow-x: auto; 
+
+    /* ruimte links en rechts in de scrollcontainer */
+    padding: 1rem;
+    
+    /* Scroll Snap: Zorgt dat kaarten netjes 'happen' naar de positie */
+    scroll-snap-type: x mandatory; 
+    
+    /* Verberg scrollbar voor andere browserss */
+    /* scrollbar-width: none;  */
+    -ms-overflow-style: none;
+    -webkit-overflow-scrolling: touch; /* Voor soepel scrollen op iPhone */
+
+    /* scrollmarker: wijst waar je bent in een carousel en je kan erop drukken */
+    scroll-marker-group: after;
+}
+
+.info-cards-container::scroll-marker-group{
+    display: flex;
+    justify-content: center;
+    gap: .5em;
+}
+
+@media (max-width: 800px) {
+    .info-cards::scroll-marker {
+        content: '';
+        height: 1em;
+        width: 1em;
+        background-color: var(--bg-accent-gray);
+        border-radius: 50%;
+        transform: translateY(-3rem);
+    }
+
+    .info-cards::scroll-marker:target-current {
+        background-color: var(--bg-gray);
+
+    }
+}
+.info-cards-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* De individuele kaarten */
+.info-cards {
+    flex: 0 0 20em; /* Breedte van de kaart (ongeveer 32cm op scherm) */
+    background-color: #fff;
+    border-radius: 8px;
+    
+    
+    /* Scroll Snap Align: De kaart stopt wanneer het in het midden is */
+    scroll-snap-align: center; 
+    
+
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.info-cards img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+
+
+    

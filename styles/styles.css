@@ -218,6 +218,7 @@ main {
     margin: 2rem auto;
     gap: 0; 
     max-width: 390px;
+    
 }
 .search-form input:focus,
 .search-form select:focus {
@@ -249,10 +250,12 @@ main {
 /* ----------------------------all 3 info cards --------------------------------------------------*/
 /* ---container voor alle 3 cards voor responsive */
 .info-cards-container {
-    display: flex;
+    /* display: flex;
     flex-direction: column; 
     gap: 1.5rem;
-    padding: 1rem;
+    padding: 1rem; */
+    
+
 
     @media (min-width: 880px) {
         flex-direction: row; 
