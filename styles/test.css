@@ -93,16 +93,30 @@ button:hover, .button:hover {
     
 
 @keyframes easy-hover {
-    0% {transform: translateY(1rem);}
-    50% {transform: translateY(-1rem);}
-    100% {transform: translateY(1rem);}
+    0% {transform: translateY(0.5rem);}
+    50% {transform: translateY(-0.5rem);}
+    100% {transform: translateY(0.5rem);}
 }
 
 @keyframes easy-hover-negative {
-    0% {transform: translateY(-1rem);}
-    50% {transform: translateY(1rem);}
-    100% {transform: translateY(-1rem);}
+    0% {transform: translateY(-0.5rem);}
+    50% {transform: translateY(0.5rem);}
+    100% {transform: translateY(-0.5rem);}
 }
 
 
 /* click and scale  */
+
+@keyframes click-and-scale {
+    0% {scale: 1;}
+    25% {scale: 0.7;}
+    50% {scale: 1.2;}
+    100% {scale: 1;}
+
+}
+
+
+
+a[href="#flow"].flowCss {
+  transform: rotate(180deg);
+}
