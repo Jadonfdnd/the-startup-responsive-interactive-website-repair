@@ -17,13 +17,24 @@ trackForm.addEventListener('submit', (e) => {
 
 
 // click and scale animatie
-const flowButton = document.querySelector('.mini-cards a');
-
-flowButton.addEventListener("mousedown", function () {
-  flowButton.classList.add("flowCss");
-});
 
 
-flowButton.addEventListener("mouseup", function () {
-  flowButton.classList.remove("flowCss");
+const allMiniCards = document.querySelectorAll('.mini-cards');
+
+allMiniCards.forEach(card => {
+
+    card.addEventListener("mousedown", function(e) {
+    
+        this.classList.add("click-and-scale");
+    });
+
+    card.addEventListener("animationend", function() {
+        this.classList.remove("click-and-scale");
+    });
+    const link = card.querySelector('a');
+    if (link) {
+        link.addEventListener("click", function(e) {
+            e.preventDefault(); 
+        });
+    }
 });
